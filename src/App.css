@@ -84,7 +84,7 @@ input:hover,input:focus{
   background-image: url(background2.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height:100vh;
   background-attachment: fixed;
 }
 .search-header{
@@ -122,52 +122,38 @@ input:hover,input:focus{
 
 
 .body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  margin: 0;
   font-family: Cambria;
   color: aliceblue;
   text-shadow: 2px 2px rgb(81, 81, 81);
   box-sizing: border-box;
 
+  width: 100%;
+  flex-direction: row column;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  width: 100px;
-  height: 100px;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 200px;
 }
 
 .item-container{
-  display: flex;
-  width: 1040px;
-  justify-content: space-evenly center;
-  align-items: center;
-  flex-wrap: wrap;
   text-align: center;
+  width: 80%;
+  height: 60%;
 }
 
 .card{
-  margin: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
   border: 1.5px solid black;
   border-radius: 50px;
   box-shadow: 0 2px 10px orange;
   padding: 30px 10px;
-  overflow: hidden;
   width: 300px;
-  align-items: center;
-}
-
-.card-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: inline-block;
 }
 
 .card-body p{
